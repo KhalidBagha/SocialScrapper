@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Codelynn - Yii+Laravel & React Bootstrap Admin Dashboard Template</title>
+
+<!-- All Library CSS -->
+
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+<link href="../css/LineIcons.css" rel="stylesheet">
+<link href="../css/viewer.min.css" rel="stylesheet">
+<link href="../css/icofont.min.css" rel="stylesheet">
+<link href="../css/calendar.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="../css/styles.css" rel="stylesheet">
+<link href="../css/responsive.css" rel="stylesheet">
+<!-- Favicon -->
+<link rel="shortcut icon" href="../favicon.ico">    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="xeQ7BJRSQs1KmhVgjnZmtYHeY3IsNhInKdQJL4dTxUCgtklU0isW_j3YfVLCNw3ht7dWNE5jIn1Kk3x6yWKHMQ==">
+</head>
+
+<body>
+    
+    <body>
+        <!-- Preloader -->
+        <!-- Preloader -->
+<div class="preloader">
+    <div class="d-table">
+        <div class="d-tablecell">
+            <span class="loader">
+                <span class="loader-inner"></span>
+            </span>
+        </div>
+    </div>
+</div>
+        <!-- Top Navbar -->
+		<!-- This conditions used for conditional header rendering like login, signup etc pages not showing the header -->
+					<nav class="navbar navbar-expand fixed-top top-menu">
+    <a class="navbar-brand" href="../index.html">
+        <!-- Large logo -->
+        <img class="large-logo" src="../images/large-logo.png" alt="Logo">        <!-- Small logo -->
+        <img class="small-logo" src="../images/small-logo.png" alt="Logo">    </a>
+
+    <!-- Burger menu -->
+    <div class="burger-menu toggle-menu">
+        <span class="top-bar"></span>
+        <span class="middle-bar"></span>
+        <span class="bottom-bar"></span>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Mega Menu -->
+        <ul class="left-nav d-none d-md-block navbar-nav">
+            <li class="nav-item dropdown mega-menu">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="mega-menu-btn">
+                        Mega Menu
+                        <i data-feather="chevron-down" class="icon"></i>
+                    </div>
+                </a>
+
+                <div class="dropdown-menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <h5 class="title">Components</h5>
+                                <a class="dropdown-item" href="../ui-component/alerts.html">Alerts</a>
+                                <a class="dropdown-item" href="../ui-component/badges.html">Badges</a>
+                                <a class="dropdown-item" href="../ui-component/buttons.html">Buttons</a>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h5 class="title">Components</h5>
+                                <a class="dropdown-item" href="../ui-component/cards.html">Cards</a>
+                                <a class="dropdown-item" href="../ui-component/dropdowns.html">Dropdowns</a>
+                                <a class="dropdown-item" href="../ui-component/forms.html">Forms</a>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h5 class="title">Components</h5>
+                                <a class="dropdown-item" href="../ui-component/list-groups.html">List Groups</a>
+                                <a class="dropdown-item" href="../ui-component/modals.html">Modals</a>
+                                <a class="dropdown-item" href="../ui-component/progress-bars.html">Progress Bars</a>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h5 class="title">Components</h5>
+                                <a class="dropdown-item" href="../ui-component/tables.html">Tables</a>
+                                <a class="dropdown-item" href="../ui-component/tabs.html">Tabs</a>
+                                <a class="dropdown-item" href="../page/gallery.html">Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Search form -->
+        <form class="nav-search-form d-none d-sm-block">
+            <input type="text" class="form-control" placeholder="Search...">
+            <button type="submit" class="search-success">
+                <i data-feather="search" class="icon"></i>
+            </button>
+        </form>
+
+        <!-- Right nav -->
+        <ul class="navbar-nav right-nav ml-auto">
+            <!-- Email Notification dropdown -->
+            <li class="nav-item dropdown message-box d-none d-sm-block">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="count-info">
+                        <i data-feather="mail" class="icon"></i>
+                        <span class="ci-number theme-bg">
+                            <span class="ripple theme-bg"></span>
+                            <span class="ripple theme-bg"></span>
+                            <span class="ripple theme-bg"></span>
+                        </span>
+                    </div>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="message-item">
+                            <div class="user-pic">
+                                <img class="rounded-circle" src="../images/user/1.jpg" alt="Profile">                                <span class="profile-status online"></span>
+                            </div>
+                            <div class="chat-content">
+                                <span class="message-title">Aaron Rossi</span>
+                                <span class="mail-desc">Just sent a new comment!</span>
+                            </div>
+                            <span class="time">0 seconds ago</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="message-item">
+                            <div class="user-pic">
+                                <img class="rounded-circle" src="../images/user/2.jpg" alt="User Image">                                <span class="profile-status ofline"></span>
+                            </div>
+                            <div class="chat-content">
+                                <span class="message-title">Marco Gomez</span>
+                                <span class="mail-desc">Just sent a new comment!</span>
+                            </div>
+                            <span class="time">5 minutes ago</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="message-item">
+                            <div class="user-pic">
+                                <img class="rounded-circle" src="../images/user/3.jpg" alt="User Image">                                <span class="profile-status away"></span>
+                            </div>
+                            <div class="chat-content">
+                                <span class="message-title">Mitch Petty</span>
+                                <span class="mail-desc">Just sent a new comment!</span>
+                            </div>
+                            <span class="time">9:00 AM</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        See all emails
+                        <i data-feather="chevron-right" class="icon"></i>
+                    </a>
+                </div>
+            </li>
+
+            <!-- Message Notification dropdown -->
+            <li class="message-box dropdown nav-item">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="count-info">
+                        <i data-feather="bell" class="icon"></i>
+                        <span class="ci-number">
+                            <span class="ripple"></span>
+                            <span class="ripple"></span>
+                            <span class="ripple"></span>
+                        </span>
+                    </div>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="message-item">
+                            <div class="user-pic">
+                                <img class="rounded-circle" src="../images/user/4.jpg" alt="User Image">                                <span class="profile-status online"></span>
+                            </div>
+                            <div class="chat-content">
+                                <span class="message-title">Aaron Rossi</span>
+                                <span class="mail-desc">Just sent a new comment!</span>
+                            </div>
+                            <span class="time">0 seconds ago</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="message-item">
+                            <div class="user-pic">
+                                <img class="rounded-circle" src="../images/user/5.jpg" alt="User Image">                                <span class="profile-status ofline"></span>
+                            </div>
+                            <div class="chat-content">
+                                <span class="message-title">Marco Gomez</span>
+                                <span class="mail-desc">Just sent a new comment!</span>
+                            </div>
+                            <span class="time">5 minutes ago</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="message-item">
+                            <div class="user-pic">
+                                <img class="rounded-circle" src="../images/user/6.jpg" alt="User Image">                                <span class="profile-status away"></span>
+                            </div>
+                            <div class="chat-content">
+                                <span class="message-title">Mitch Petty</span>
+                                <span class="mail-desc">
+                                    New order received!
+                                    <span class="amount">$250</span>
+                                </span>
+                            </div>
+                            <span class="time">9:00 AM - 02-02-2019</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        Check all notifications
+                        <i data-feather="chevron-right" class="icon"></i>
+                    </a>
+                </div>
+            </li>
+
+            <!-- Profile dropdown -->
+            <li class="nav-item dropdown profile-nav-item">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="menu-profile">
+                        <span class="name">Aaron Rossi</span>
+                        <img class="rounded-circle" src="../images/user/1.jpg" alt="Profile Image">                    </div>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="../page/profile.html">
+                        <i data-feather="user" class="icon"></i>
+                        Profile
+                    </a>
+                    <a class="dropdown-item" href="../app/inbox.html">
+                        <i data-feather="inbox" class="icon"></i>
+                        Mailbox
+                    </a>
+                    <a class="dropdown-item" href="../app/chat.html">
+                        <i data-feather="help-circle" class="icon"></i>
+                        Support
+                    </a>
+                    <a class="dropdown-item" href="../page/profile-settings.html">
+                        <i data-feather="settings" class="icon"></i>
+                        Settings
+                    </a>
+                    <a class="dropdown-item" href="../user/login.html">
+                        <i data-feather="log-out" class="icon"></i>
+                        Logout
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>		
+			<!-- Side Menu -->
+			<div class="sidemenu-area sidemenu-toggle default">
+    <nav class="sidemenu navbar navbar-expand navbar-light hide-nav-title">
+        <div class="navbar-collapse collapse">
+            <div class="navbar-nav">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-title">
+                            <i data-feather="grid" class="icon"></i>
+                            <span class="title">
+                                Dashboard
+                                <i data-feather="chevron-right" class="icon fr"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../index.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Sales
+                        </a>
+                        <a class="dropdown-item" href="../dashboard2.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            eCommerce
+                        </a>
+                        <a class="dropdown-item" href="../dashboard3.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Analytics
+                        </a>
+						<a class="dropdown-item" href="../dashboard4.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            CRM
+                        </a>
+						<a class="dropdown-item" href="../dashboard5.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Project
+                        </a>
+                    </div>
+                </div>
+
+                <a class="nav-link" href="../app/inbox.html">
+                    <i data-feather="inbox" class="icon"></i>
+                    <span class="title">Inbox</span>
+                </a>
+                <a class="nav-link" href="../app/chat.html">
+                    <i data-feather="message-square" class="icon"></i>
+                    <span class="title">Chat</span>
+                </a>
+                <a class="nav-link" href="../app/todos.html">
+                    <i data-feather="check-square" class="icon"></i>
+                    <span class="title">Todo List</span>
+                </a>
+                <a class="nav-link" href="../app/notes.html">
+                    <i data-feather="file-text" class="icon"></i>
+                    <span class="title">Notes</span>
+                </a>
+                <a class="nav-link" href="../app/calendar.html">
+                    <i data-feather="calendar" class="icon"></i>
+                    <span class="title">Calendar</span>
+                </a>
+                <a class="nav-link" href="../page/search.html">
+                    <i data-feather="search" class="icon"></i>
+                    <span class="title">Search</span>
+                </a>
+
+                <div class="nav-item dropdown super-color">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-title">
+                            <i data-feather="filter" class="icon"></i>
+                            <span class="title">
+                                UI Components
+                                <i data-feather="chevron-right" class="icon fr"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../ui-component/alerts.html">
+                            <i data-feather="bell" class="icon"></i>
+                            Alerts
+                        </a>
+                        <a class="dropdown-item" href="../ui-component/badges.html">
+                            <i data-feather="award" class="icon"></i>
+                            Badges
+                        </a>
+                        <a class="dropdown-item" href="../ui-component/buttons.html">
+                            <i data-feather="arrow-right-circle" class="icon"></i>
+                            Buttons
+                        </a>
+                        <a class="dropdown-item" href="../ui-component/cards.html">
+                            <i data-feather="layers" class="icon"></i>
+                            Cards
+                        </a>
+                        <a class="dropdown-item" href="../ui-component/dropdowns.html">
+                            <i data-feather="arrow-down-circle" class="icon"></i>
+                            Dropdowns
+                        </a>
+                        <a class="dropdown-item" href="../ui-component/forms.html">
+                            <i data-feather="file-text" class="icon"></i>
+                            Forms
+                        </a>
+                        <a class="dropdown-item" href="../ui-component/list-groups.html">
+                            <i data-feather="list" class="icon"></i>
+                            List Groups
+                        </a>
+                        <a class="dropdown-item" href="../ui-component/modals.html">
+                            <i data-feather="airplay" class="icon"></i>
+                            Modals
+                        </a>
+                        <a class="dropdown-item" href="../ui-component/progress-bars.html">
+                            <i data-feather="trending-up" class="icon"></i>
+                            Progress Bars
+                        </a>
+                        <a class="dropdown-item" href="../ui-component/tables.html">
+                            <i data-feather="database" class="icon"></i>
+                            Tables
+                        </a>
+                        <a class="dropdown-item" href="../ui-component/tabs.html">
+                            <i data-feather="triangle" class="icon"></i>
+                            Tabs
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-title">
+                            <i data-feather="user" class="icon"></i>
+                            <span class="title">
+                                User
+                                <i data-feather="chevron-right" class="icon fr"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../user/signup.html">
+                            <i data-feather="user-plus" class="icon"></i>
+                            Sign Up
+                        </a>
+                        <a class="dropdown-item" href="../user/login.html">
+                            <i data-feather="user-check" class="icon"></i>
+                            Login
+                        </a>
+                        <a class="dropdown-item" href="../user/forgot-password.html">
+                            <i data-feather="unlock" class="icon"></i>
+                            Forgot Password
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-title">
+                            <i data-feather="bar-chart-2" class="icon"></i>
+                            <span class="title">
+                                Charts
+                                <i data-feather="chevron-right" class="icon fr"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../chart/line-chart.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Line Chart
+                        </a>
+                        <a class="dropdown-item" href="../chart/area-chart.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Area Chart
+                        </a>
+                        <a class="dropdown-item" href="../chart/column-chart.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Column Chart
+                        </a>
+                        <a class="dropdown-item" href="../chart/bar-chart.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Bar Chart
+                        </a>
+                        <a class="dropdown-item" href="../chart/mixed-chart.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Mixed Chart
+                        </a>
+                        <a class="dropdown-item" href="../chart/pie-donuts-chart.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Pie and Donuts Chart
+                        </a>
+                    </div>
+                </div>
+
+                <div class="dropdown nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-title">
+                            <i data-feather="heart" class="icon"></i>
+                            <span class="title">
+                                Icons
+                                <i data-feather="chevron-right" class="icon fr"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="feather-icons.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Feather Icons
+                        </a>
+                        <a class="dropdown-item" href="line-icons.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Line Icons
+                        </a>
+                        <a class="dropdown-item" href="icofont-icons.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Icofont Icons
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-title">
+                            <i data-feather="file-text" class="icon"></i>
+                            <span class="title">
+                                Pages
+                                <i data-feather="chevron-right" class="icon fr"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../page/invoice.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Invoice
+                        </a>
+                        <a class="dropdown-item" href="../page/users-card.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Users Card
+                        </a> 
+                        <a class="dropdown-item" href="../page/notifications.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            <span class="title">Notifications</span>
+                        </a>
+                        <a class="dropdown-item" href="../page/timeline.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Timeline
+                        </a>
+                        <a class="dropdown-item" href="../page/gallery.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Gallery
+                        </a>
+                        <a class="dropdown-item" href="../page/faq.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            FAQ
+                        </a>
+                        <a class="dropdown-item" href="../page/pricing.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Pricing
+                        </a>
+                        <a class="dropdown-item" href="../page/profile.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Profile
+                        </a>
+                        <a class="dropdown-item" href="../page/profile-settings.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Profile Settings
+                        </a>
+                        <a class="dropdown-item" href="../page/error-404.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Error 404
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+			<!-- Main Content Wrapper -->
+			<div class="main-content d-flex flex-column hide-sidemenu">
+						<!-- Main Content Layout -->
+				
+    <!-- Main Content Header -->
+    <div class="main-content-header">
+        <h1>IconFont Icons</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../index.html">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <span class="active">IconFont Icons</span>
+            </li>
+        </ol>
+    </div>
+    <!-- End Main Content Header -->
+
+    <!-- IconFont Icons -->
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-addons"></i>
+                <span>addons</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-address-book"></i>
+                <span>address-book</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-adjust"></i>
+                <span>adjust</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-alarm"></i>
+                <span>alarm</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-anchor"></i>
+                <span>anchor</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-archive"></i>
+                <span>archive</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-at"></i>
+                <span>at</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-attachment"></i>
+                <span>attachment</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-audio"></i>
+                <span>audio</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-automation"></i>
+                <span>automation</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-badge"></i>
+                <span>badge</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bag-alt"></i>
+                <span>bag-alt</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bag"></i>
+                <span>bag</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-ban"></i>
+                <span>ban</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bar-code"></i>
+                <span>bar-code</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bars"></i>
+                <span>bars</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-basket"></i>
+                <span>basket</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bed"></i>
+                <span>bed</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bell"></i>
+                <span>bell</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-beverage"></i>
+                <span>beverage</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bin"></i>
+                <span>bin</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-binary"></i>
+                <span>binary</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-binoculars"></i>
+                <span>binoculars</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bluetooth"></i>
+                <span>bluetooth</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bomb"></i>
+                <span>bomb</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-book-mark"></i>
+                <span>book-mark</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-box"></i>
+                <span>box</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-briefcase"></i>
+                <span>briefcase</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-broken"></i>
+                <span>broken</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bucket"></i>
+                <span>bucket</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bug"></i>
+                <span>bug</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-building"></i>
+                <span>building</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bulb-alt"></i>
+                <span>bulb-alt</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bullhorn"></i>
+                <span>bullhorn</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bullseye"></i>
+                <span>bullseye</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-calendar"></i>
+                <span>calendar</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-camera"></i>
+                <span>camera</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-card"></i>
+                <span>card</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-cart-alt"></i>
+                <span>cart-alt</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-cart"></i>
+                <span>cart</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-chat"></i>
+                <span>chat</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-check-alt"></i>
+                <span>check-alt</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-check-circled"></i>
+                <span>check-circled</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-check"></i>
+                <span>check</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-checked"></i>
+                <span>checked</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-clock-time"></i>
+                <span>clock-time</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-close-circled"></i>
+                <span>close-circled</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-close-line-circled"></i>
+                <span>close-line-circled</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-cloud-download"></i>
+                <span>cloud-download</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-code"></i>
+                <span>code</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-comment"></i>
+                <span>comment</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-computer"></i>
+                <span>computer</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-contacts"></i>
+                <span>contacts</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-copyright"></i>
+                <span>copyright</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-credit-card"></i>
+                <span>credit-card</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-crop"></i>
+                <span>crop</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-dashboard"></i>
+                <span>dashboard</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-data"></i>
+                <span>data</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-database-add"></i>
+                <span>database-add</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-database-locked"></i>
+                <span>database-locked</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-database-remove"></i>
+                <span>database-remove</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-database"></i>
+                <span>database</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-download"></i>
+                <span>download</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-envelope-open"></i>
+                <span>envelope-open</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-envelope"></i>
+                <span>envelope</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-exclamation-tringle"></i>
+                <span>exclamation-tringle</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-exclamation"></i>
+                <span>exclamation</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-exit"></i>
+                <span>exit</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-eye-alt"></i>
+                <span>eye-alt</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-eye"></i>
+                <span>eye</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-favourite"></i>
+                <span>favourite</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-fax"></i>
+                <span>fax</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-filter"></i>
+                <span>filter</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-fire-alt"></i>
+                <span>fire-alt</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-flag"></i>
+                <span>flag</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-flash"></i>
+                <span>flash</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-folder"></i>
+                <span>folder</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-gear"></i>
+                <span>gear</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-gears"></i>
+                <span>gears</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-grocery"></i>
+                <span>grocery</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-hand"></i>
+                <span>hand</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-heart-alt"></i>
+                <span>heart-alt</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-heart"></i>
+                <span>heart</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-home"></i>
+                <span>home</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-inbox"></i>
+                <span>inbox</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-info-circle"></i>
+                <span>info-circle</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-info"></i>
+                <span>info</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-institution"></i>
+                <span>institution</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-key"></i>
+                <span>key</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-layers"></i>
+                <span>layers</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-layout"></i>
+                <span>layout</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-leaf"></i>
+                <span>leaf</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-letter"></i>
+                <span>letter</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-learn"></i>
+                <span>learn</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-light-bulb"></i>
+                <span>light-bulb</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-like"></i>
+                <span>like</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-link"></i>
+                <span>link</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-live-support"></i>
+                <span>live-support</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-location-pin"></i>
+                <span>location-pin</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-lock"></i>
+                <span>lock</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-login"></i>
+                <span>login</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-logout"></i>
+                <span>logout</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-map-pins"></i>
+                <span>map-pins</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-minus"></i>
+                <span>minus</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-mobile-phone"></i>
+                <span>mobile-phone</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-moon"></i>
+                <span>moon</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-not-allowed"></i>
+                <span>not-allowed</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-notebook"></i>
+                <span>notebook</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-notepad"></i>
+                <span>notepad</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-notification"></i>
+                <span>notification</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-options"></i>
+                <span>options</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-pay"></i>
+                <span>pay</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-phone"></i>
+                <span>phone</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bell"></i>
+                <span>bell</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-plugin"></i>
+                <span>plugin</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-plus"></i>
+                <span>plus</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-power"></i>
+                <span>power</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-print"></i>
+                <span>print</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-question"></i>
+                <span>question</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-quote-left"></i>
+                <span>quote-left</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-quote-right"></i>
+                <span>quote-right</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-random"></i>
+                <span>random</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-recycle"></i>
+                <span>recycle</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-repair"></i>
+                <span>repair</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-reply-all"></i>
+                <span>reply-all</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-reply"></i>
+                <span>reply</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-responsive"></i>
+                <span>responsive</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-send-mail"></i>
+                <span>send-mail</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-server"></i>
+                <span>server</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-settings-alt"></i>
+                <span>settings-alt</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-settings"></i>
+                <span>settings</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-share"></i>
+                <span>share</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-shopping-cart"></i>
+                <span>shopping-cart</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-sign-in"></i>
+                <span>sign-in</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-sign-out"></i>
+                <span>sign-out</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-signal"></i>
+                <span>signal</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-site-map"></i>
+                <span>site-map</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-smart-phone"></i>
+                <span>smart-phone</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-soccer"></i>
+                <span>soccer</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-space"></i>
+                <span>space</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-spanner"></i>
+                <span>spanner</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-speed-meter"></i>
+                <span>speed-meter</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-spinner-alt-1"></i>
+                <span>spinner-alt-1</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-spinner"></i>
+                <span>spinner</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-star"></i>
+                <span>star</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-street-view"></i>
+                <span>street-view</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-tag"></i>
+                <span>tag</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-tasks"></i>
+                <span>tasks</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-thumbs-down"></i>
+                <span>thumbs-down</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-thumbs-up"></i>
+                <span>thumbs-up</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-tick-mark"></i>
+                <span>tick-mark</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-tie"></i>
+                <span>tie</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-tools-alt-2"></i>
+                <span>tools-alt-2</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-tools"></i>
+                <span>tools</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-touch"></i>
+                <span>touch</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-verification-check"></i>
+                <span>verification-check</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-zipped"></i>
+                <span>zipped</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-world"></i>
+                <span>world</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-wifi"></i>
+                <span>wifi</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-web"></i>
+                <span>web</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-water-drop"></i>
+                <span>water-drop</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-warning"></i>
+                <span>warning</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-warning-alt"></i>
+                <span>warning-alt</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-wallet"></i>
+                <span>wallet</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-wall"></i>
+                <span>wall</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-wall-clock"></i>
+                <span>wall-clock</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-usb"></i>
+                <span>usb</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-usb-drive"></i>
+                <span>usb-drive</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-upload"></i>
+                <span>upload</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-upload-alt"></i>
+                <span>upload-alt</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-lock"></i>
+                <span>lock</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-unlock"></i>
+                <span>unlock</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-unique-idea"></i>
+                <span>unique-idea</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-tree"></i>
+                <span>tree</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-facebook"></i>
+                <span>facebook</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-twitter"></i>
+                <span>twitter</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-linkedin"></i>
+                <span>linkedin</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-linkedin"></i>
+                <span>instagram</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-500px"></i>
+                <span>500px</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-aim"></i>
+                <span>aim</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-badoo"></i>
+                <span>badoo</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-baidu-tieba"></i>
+                <span>baidu-tieba</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bbm-messenger"></i>
+                <span>bbm-messenger</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bebo"></i>
+                <span>bebo</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-behance"></i>
+                <span>behance</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-blogger"></i>
+                <span>blogger</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-bootstrap"></i>
+                <span>bootstrap</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-brightkite"></i>
+                <span>brightkite</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-cloudapp"></i>
+                <span>cloudapp</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-concrete5"></i>
+                <span>concrete5</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-delicious"></i>
+                <span>delicious</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-designbump"></i>
+                <span>designbump</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-designfloat"></i>
+                <span>designfloat</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-deviantart"></i>
+                <span>deviantart</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-digg"></i>
+                <span>digg</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-dotcms"></i>
+                <span>dotcms</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-dribbble"></i>
+                <span>dribbble</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-dropbox"></i>
+                <span>dropbox</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-ebuddy"></i>
+                <span>ebuddy</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-ello"></i>
+                <span>ello</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-ember"></i>
+                <span>ember</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-Codelynn"></i>
+                <span>Codelynn</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-evernote"></i>
+                <span>evernote</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-facebook-messenger"></i>
+                <span>facebook-messenger</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-feedburner"></i>
+                <span>feedburner</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-flikr"></i>
+                <span>flikr</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-folkd"></i>
+                <span>folkd</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-foursquare"></i>
+                <span>foursquare</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-friendfeed"></i>
+                <span>friendfeed</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-ghost"></i>
+                <span>ghost</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-github"></i>
+                <span>github</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-gnome"></i>
+                <span>gnome</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-google-buzz"></i>
+                <span>google-buzz</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-google-hangouts"></i>
+                <span>google-hangouts</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-google-map"></i>
+                <span>google-map</span>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="icon-preview hover-card mb-4">
+                <i class="icofont-2x icofont-stack-overflow"></i>
+                <span>stack-overflow</span>
+            </div>
+        </div>
+    </div>
+    <!-- End IconFont Icons -->
+
+		
+		<!-- This conditions used for conditional footer rendering like login, signup etc pages not showing the footer -->
+						<!-- Footer -->
+				<div class="flex-grow-1"></div>
+<footer class="footer mt-1">
+    <p>Copyright © 2019 Codelynn. All rights reserved</p>
+</footer>			</div>
+			<!-- End Main Content Wrapper -->
+		
+        <!-- Theme Color customizer Right Modal -->
+        <div class="customizer-toggle" data-toggle="modal" data-target="#ThemeColorCustomizer">
+    <i data-feather="settings" class="spin icon mt-minus-2"></i>
+</div>
+
+<div class="modal right color-customizer-modal fade" id="ThemeColorCustomizer">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel2">Theme Color Customizer</h4>
+            </div>
+
+            <div class="modal-body">
+                <!-- Left SideMenu Color Switcher -->
+                <div class="color-content">
+                    <h5>Left SideMenu Color</h5>
+                    <p class="mb-2">Change SideMenu background color</p>
+                    <ul class="customize-sidemenu">
+                        <li id="BGPrimary" class="bg_primary"></li>
+                        <li id="BGPurpleIndigo" class="purple_indigo"></li>
+                        <li id="BGPink" class="bg_pink"></li>
+                        <li id="BGnNightBlue" class="bg_night_blue"></li>
+                        <li id="BGIndigo" class="bg_indigo"></li>
+                        <li id="BGSuccess" class="bg_success"></li>
+                        <li id="BGSecondary" class="bg_secondary"></li>
+                        <li id="BGPurple" class="bg_purple"></li>
+                        <li id="BGGray" class="bg_gray"></li>
+                        <li id="BGDanger" class="bg_danger"></li>
+                        <li id="BGGrayBlue" class="bg_gray_blue"></li>
+                        <li id="BGGreen" class="bg_green"></li>
+                        <li id="BGWarning" class="bg_warning"></li>
+                        <li id="BGDeepPurple" class="bg_deep_purple"></li>
+                    </ul>
+                </div>
+
+                <!-- Left SideMenu Folded Menu -->
+                <div class="color-content">
+                    <h5>Folded Menu</h5>
+                    <p>Toggle Folded Menu</p>
+
+                    <div class="side-menu-switch">
+                        <label class="switch">
+                            <input type="checkbox" class="light">
+                            <span class="slider round folded-menu"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card Shadow Show & hide -->
+                <div class="color-content">
+                    <h5>Card Shadow</h5>
+                    <p>Show & Hide Card Shadow</p>
+
+                    <div class="side-menu-switch">
+                        <label class="switch">
+                            <input type="checkbox" class="light">
+                            <span class="slider round card-shadow"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Footer Scripts -->
+        <!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Feather Icon JS -->
+<script src="../js/feather.min.js"></script>
+<!-- Gllery viewer JS -->
+<script src="../js/viewer.min.js"></script>
+
+<!-- ApexCharts JS -->
+<script src="../js/apex-charts/apexcharts.min.js"></script>
+<script src="../js/apex-charts/apexcharts-stock-prices.js"></script>
+<script src="../js/apex-charts/apex-line-charts.js"></script>
+<script src="../js/apex-charts/apex-area-charts.js"></script>
+<script src="../js/apex-charts/apex-bar-charts.js"></script>
+<script src="../js/apex-charts/apex-mixed-charts.js"></script>
+<script src="../js/apex-charts/apex-pie-donuts-charts.js"></script>
+<script src="../js/apex-charts/sales-by-countries.js"></script>
+<script src="../js/apex-charts/product-trends-by-month.js"></script>
+<script src="../js/apex-charts/month-sales-statistics.js"></script>
+<script src="../js/apex-charts/order-summary.js"></script>
+<script src="../js/apex-charts/visitors-overview.js"></script>
+<script src="../js/apex-charts/leads-stats.js"></script>
+<script src="../js/apex-charts/apex-column-charts.js"></script>
+<script src="../js/custom-chart.js"></script>
+
+<!-- Custom JS -->
+<script src="../js/custom.js"></script>
+            </body>
+</html>

@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Codelynn - Yii+Laravel & React Bootstrap Admin Dashboard Template</title>
+
+<!-- All Library CSS -->
+
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+<link href="../css/LineIcons.css" rel="stylesheet">
+<link href="../css/viewer.min.css" rel="stylesheet">
+<link href="../css/icofont.min.css" rel="stylesheet">
+<link href="../css/calendar.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="../css/styles.css" rel="stylesheet">
+<link href="../css/responsive.css" rel="stylesheet">
+<!-- Favicon -->
+<link rel="shortcut icon" href="../favicon.ico">    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="lQe3NJqVYStSB_mx0RBZ-pPBV14geRaFWWSy-ZaAU3_wVcVk3Ow1GCVFkYOdUTKupahiGEIsJt86I8es2LERDg==">
+</head>
+
+<body>
+    
+    <body>
+        <!-- Preloader -->
+        <!-- Preloader -->
+<div class="preloader">
+    <div class="d-table">
+        <div class="d-tablecell">
+            <span class="loader">
+                <span class="loader-inner"></span>
+            </span>
+        </div>
+    </div>
+</div>
+        <!-- Top Navbar -->
+		<!-- This conditions used for conditional header rendering like login, signup etc pages not showing the header -->
+					<nav class="navbar navbar-expand fixed-top top-menu">
+    <a class="navbar-brand" href="../index.html">
+        <!-- Large logo -->
+        <img class="large-logo" src="../images/large-logo.png" alt="Logo">        <!-- Small logo -->
+        <img class="small-logo" src="../images/small-logo.png" alt="Logo">    </a>
+
+    <!-- Burger menu -->
+    <div class="burger-menu toggle-menu">
+        <span class="top-bar"></span>
+        <span class="middle-bar"></span>
+        <span class="bottom-bar"></span>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Mega Menu -->
+        <ul class="left-nav d-none d-md-block navbar-nav">
+            <li class="nav-item dropdown mega-menu">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="mega-menu-btn">
+                        Mega Menu
+                        <i data-feather="chevron-down" class="icon"></i>
+                    </div>
+                </a>
+
+                <div class="dropdown-menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <h5 class="title">Components</h5>
+                                <a class="dropdown-item" href="alerts.html">Alerts</a>
+                                <a class="dropdown-item" href="badges.html">Badges</a>
+                                <a class="dropdown-item" href="buttons.html">Buttons</a>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h5 class="title">Components</h5>
+                                <a class="dropdown-item" href="cards.html">Cards</a>
+                                <a class="dropdown-item" href="dropdowns.html">Dropdowns</a>
+                                <a class="dropdown-item" href="forms.html">Forms</a>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h5 class="title">Components</h5>
+                                <a class="dropdown-item" href="list-groups.html">List Groups</a>
+                                <a class="dropdown-item" href="modals.html">Modals</a>
+                                <a class="dropdown-item" href="progress-bars.html">Progress Bars</a>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h5 class="title">Components</h5>
+                                <a class="dropdown-item" href="tables.html">Tables</a>
+                                <a class="dropdown-item" href="tabs.html">Tabs</a>
+                                <a class="dropdown-item" href="../page/gallery.html">Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Search form -->
+        <form class="nav-search-form d-none d-sm-block">
+            <input type="text" class="form-control" placeholder="Search...">
+            <button type="submit" class="search-success">
+                <i data-feather="search" class="icon"></i>
+            </button>
+        </form>
+
+        <!-- Right nav -->
+        <ul class="navbar-nav right-nav ml-auto">
+            <!-- Email Notification dropdown -->
+            <li class="nav-item dropdown message-box d-none d-sm-block">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="count-info">
+                        <i data-feather="mail" class="icon"></i>
+                        <span class="ci-number theme-bg">
+                            <span class="ripple theme-bg"></span>
+                            <span class="ripple theme-bg"></span>
+                            <span class="ripple theme-bg"></span>
+                        </span>
+                    </div>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="message-item">
+                            <div class="user-pic">
+                                <img class="rounded-circle" src="../images/user/1.jpg" alt="Profile">                                <span class="profile-status online"></span>
+                            </div>
+                            <div class="chat-content">
+                                <span class="message-title">Aaron Rossi</span>
+                                <span class="mail-desc">Just sent a new comment!</span>
+                            </div>
+                            <span class="time">0 seconds ago</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="message-item">
+                            <div class="user-pic">
+                                <img class="rounded-circle" src="../images/user/2.jpg" alt="User Image">                                <span class="profile-status ofline"></span>
+                            </div>
+                            <div class="chat-content">
+                                <span class="message-title">Marco Gomez</span>
+                                <span class="mail-desc">Just sent a new comment!</span>
+                            </div>
+                            <span class="time">5 minutes ago</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="message-item">
+                            <div class="user-pic">
+                                <img class="rounded-circle" src="../images/user/3.jpg" alt="User Image">                                <span class="profile-status away"></span>
+                            </div>
+                            <div class="chat-content">
+                                <span class="message-title">Mitch Petty</span>
+                                <span class="mail-desc">Just sent a new comment!</span>
+                            </div>
+                            <span class="time">9:00 AM</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        See all emails
+                        <i data-feather="chevron-right" class="icon"></i>
+                    </a>
+                </div>
+            </li>
+
+            <!-- Message Notification dropdown -->
+            <li class="message-box dropdown nav-item">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="count-info">
+                        <i data-feather="bell" class="icon"></i>
+                        <span class="ci-number">
+                            <span class="ripple"></span>
+                            <span class="ripple"></span>
+                            <span class="ripple"></span>
+                        </span>
+                    </div>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="message-item">
+                            <div class="user-pic">
+                                <img class="rounded-circle" src="../images/user/4.jpg" alt="User Image">                                <span class="profile-status online"></span>
+                            </div>
+                            <div class="chat-content">
+                                <span class="message-title">Aaron Rossi</span>
+                                <span class="mail-desc">Just sent a new comment!</span>
+                            </div>
+                            <span class="time">0 seconds ago</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="message-item">
+                            <div class="user-pic">
+                                <img class="rounded-circle" src="../images/user/5.jpg" alt="User Image">                                <span class="profile-status ofline"></span>
+                            </div>
+                            <div class="chat-content">
+                                <span class="message-title">Marco Gomez</span>
+                                <span class="mail-desc">Just sent a new comment!</span>
+                            </div>
+                            <span class="time">5 minutes ago</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="message-item">
+                            <div class="user-pic">
+                                <img class="rounded-circle" src="../images/user/6.jpg" alt="User Image">                                <span class="profile-status away"></span>
+                            </div>
+                            <div class="chat-content">
+                                <span class="message-title">Mitch Petty</span>
+                                <span class="mail-desc">
+                                    New order received!
+                                    <span class="amount">$250</span>
+                                </span>
+                            </div>
+                            <span class="time">9:00 AM - 02-02-2019</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        Check all notifications
+                        <i data-feather="chevron-right" class="icon"></i>
+                    </a>
+                </div>
+            </li>
+
+            <!-- Profile dropdown -->
+            <li class="nav-item dropdown profile-nav-item">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="menu-profile">
+                        <span class="name">Aaron Rossi</span>
+                        <img class="rounded-circle" src="../images/user/1.jpg" alt="Profile Image">                    </div>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="../page/profile.html">
+                        <i data-feather="user" class="icon"></i>
+                        Profile
+                    </a>
+                    <a class="dropdown-item" href="../app/inbox.html">
+                        <i data-feather="inbox" class="icon"></i>
+                        Mailbox
+                    </a>
+                    <a class="dropdown-item" href="../app/chat.html">
+                        <i data-feather="help-circle" class="icon"></i>
+                        Support
+                    </a>
+                    <a class="dropdown-item" href="../page/profile-settings.html">
+                        <i data-feather="settings" class="icon"></i>
+                        Settings
+                    </a>
+                    <a class="dropdown-item" href="../user/login.html">
+                        <i data-feather="log-out" class="icon"></i>
+                        Logout
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>		
+			<!-- Side Menu -->
+			<div class="sidemenu-area sidemenu-toggle default">
+    <nav class="sidemenu navbar navbar-expand navbar-light hide-nav-title">
+        <div class="navbar-collapse collapse">
+            <div class="navbar-nav">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-title">
+                            <i data-feather="grid" class="icon"></i>
+                            <span class="title">
+                                Dashboard
+                                <i data-feather="chevron-right" class="icon fr"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../index.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Sales
+                        </a>
+                        <a class="dropdown-item" href="../dashboard2.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            eCommerce
+                        </a>
+                        <a class="dropdown-item" href="../dashboard3.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Analytics
+                        </a>
+						<a class="dropdown-item" href="../dashboard4.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            CRM
+                        </a>
+						<a class="dropdown-item" href="../dashboard5.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Project
+                        </a>
+                    </div>
+                </div>
+
+                <a class="nav-link" href="../app/inbox.html">
+                    <i data-feather="inbox" class="icon"></i>
+                    <span class="title">Inbox</span>
+                </a>
+                <a class="nav-link" href="../app/chat.html">
+                    <i data-feather="message-square" class="icon"></i>
+                    <span class="title">Chat</span>
+                </a>
+                <a class="nav-link" href="../app/todos.html">
+                    <i data-feather="check-square" class="icon"></i>
+                    <span class="title">Todo List</span>
+                </a>
+                <a class="nav-link" href="../app/notes.html">
+                    <i data-feather="file-text" class="icon"></i>
+                    <span class="title">Notes</span>
+                </a>
+                <a class="nav-link" href="../app/calendar.html">
+                    <i data-feather="calendar" class="icon"></i>
+                    <span class="title">Calendar</span>
+                </a>
+                <a class="nav-link" href="../page/search.html">
+                    <i data-feather="search" class="icon"></i>
+                    <span class="title">Search</span>
+                </a>
+
+                <div class="nav-item dropdown super-color">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-title">
+                            <i data-feather="filter" class="icon"></i>
+                            <span class="title">
+                                UI Components
+                                <i data-feather="chevron-right" class="icon fr"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="alerts.html">
+                            <i data-feather="bell" class="icon"></i>
+                            Alerts
+                        </a>
+                        <a class="dropdown-item" href="badges.html">
+                            <i data-feather="award" class="icon"></i>
+                            Badges
+                        </a>
+                        <a class="dropdown-item" href="buttons.html">
+                            <i data-feather="arrow-right-circle" class="icon"></i>
+                            Buttons
+                        </a>
+                        <a class="dropdown-item" href="cards.html">
+                            <i data-feather="layers" class="icon"></i>
+                            Cards
+                        </a>
+                        <a class="dropdown-item" href="dropdowns.html">
+                            <i data-feather="arrow-down-circle" class="icon"></i>
+                            Dropdowns
+                        </a>
+                        <a class="dropdown-item" href="forms.html">
+                            <i data-feather="file-text" class="icon"></i>
+                            Forms
+                        </a>
+                        <a class="dropdown-item" href="list-groups.html">
+                            <i data-feather="list" class="icon"></i>
+                            List Groups
+                        </a>
+                        <a class="dropdown-item" href="modals.html">
+                            <i data-feather="airplay" class="icon"></i>
+                            Modals
+                        </a>
+                        <a class="dropdown-item" href="progress-bars.html">
+                            <i data-feather="trending-up" class="icon"></i>
+                            Progress Bars
+                        </a>
+                        <a class="dropdown-item" href="tables.html">
+                            <i data-feather="database" class="icon"></i>
+                            Tables
+                        </a>
+                        <a class="dropdown-item" href="tabs.html">
+                            <i data-feather="triangle" class="icon"></i>
+                            Tabs
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-title">
+                            <i data-feather="user" class="icon"></i>
+                            <span class="title">
+                                User
+                                <i data-feather="chevron-right" class="icon fr"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../user/signup.html">
+                            <i data-feather="user-plus" class="icon"></i>
+                            Sign Up
+                        </a>
+                        <a class="dropdown-item" href="../user/login.html">
+                            <i data-feather="user-check" class="icon"></i>
+                            Login
+                        </a>
+                        <a class="dropdown-item" href="../user/forgot-password.html">
+                            <i data-feather="unlock" class="icon"></i>
+                            Forgot Password
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-title">
+                            <i data-feather="bar-chart-2" class="icon"></i>
+                            <span class="title">
+                                Charts
+                                <i data-feather="chevron-right" class="icon fr"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../chart/line-chart.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Line Chart
+                        </a>
+                        <a class="dropdown-item" href="../chart/area-chart.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Area Chart
+                        </a>
+                        <a class="dropdown-item" href="../chart/column-chart.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Column Chart
+                        </a>
+                        <a class="dropdown-item" href="../chart/bar-chart.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Bar Chart
+                        </a>
+                        <a class="dropdown-item" href="../chart/mixed-chart.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Mixed Chart
+                        </a>
+                        <a class="dropdown-item" href="../chart/pie-donuts-chart.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Pie and Donuts Chart
+                        </a>
+                    </div>
+                </div>
+
+                <div class="dropdown nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-title">
+                            <i data-feather="heart" class="icon"></i>
+                            <span class="title">
+                                Icons
+                                <i data-feather="chevron-right" class="icon fr"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../icon/feather-icons.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Feather Icons
+                        </a>
+                        <a class="dropdown-item" href="../icon/line-icons.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Line Icons
+                        </a>
+                        <a class="dropdown-item" href="../icon/icofont-icons.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Icofont Icons
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-title">
+                            <i data-feather="file-text" class="icon"></i>
+                            <span class="title">
+                                Pages
+                                <i data-feather="chevron-right" class="icon fr"></i>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../page/invoice.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Invoice
+                        </a>
+                        <a class="dropdown-item" href="../page/users-card.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Users Card
+                        </a> 
+                        <a class="dropdown-item" href="../page/notifications.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            <span class="title">Notifications</span>
+                        </a>
+                        <a class="dropdown-item" href="../page/timeline.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Timeline
+                        </a>
+                        <a class="dropdown-item" href="../page/gallery.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Gallery
+                        </a>
+                        <a class="dropdown-item" href="../page/faq.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            FAQ
+                        </a>
+                        <a class="dropdown-item" href="../page/pricing.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Pricing
+                        </a>
+                        <a class="dropdown-item" href="../page/profile.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Profile
+                        </a>
+                        <a class="dropdown-item" href="../page/profile-settings.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Profile Settings
+                        </a>
+                        <a class="dropdown-item" href="../page/error-404.html">
+                            <i data-feather="chevron-right" class="icon"></i>
+                            Error 404
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+			<!-- Main Content Wrapper -->
+			<div class="main-content d-flex flex-column hide-sidemenu">
+						<!-- Main Content Layout -->
+				
+    <!-- Main Content Header -->
+    <div class="main-content-header">
+        <h1>Forms</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../index.html">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <span class="active">Forms</span>
+            </li>
+        </ol>
+    </div>
+    <!-- End Main Content Header -->
+
+    <!-- Vertical Form -->
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card mb-30">
+                <div class="card-body">
+                    <div class="card-header">
+                        <h5 class="card-title">Vertical Form</h5>
+                    </div>
+
+                    <form>
+                        <div class="form-group">
+                            <label>Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Vertical Form -->
+
+    <!-- Horizontal Form -->
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card mb-30">
+                <div class="card-body">
+                    <div class="card-header">
+                        <h5 class="card-title">Horizontal Form</h5>
+                    </div>
+
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <label class="col-form-label col-sm-2 pt-0">Radios</label>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            First radio
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                        <label class="form-check-label" for="gridRadios2">
+                                            Second radio
+                                        </label>
+                                    </div>
+                                    <div class="form-check disabled">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                                        <label class="form-check-label" for="gridRadios3">
+                                            Third disabled radio
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2">Checkbox</label>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Example checkbox
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-10 offset-sm-2">
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Horizontal Form -->
+
+    <!-- Form Controls -->
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card mb-30">
+                <div class="card-body">
+                    <div class="card-header">
+                        <h5 class="card-title">Form Controls</h5>
+                    </div>
+
+                    <form>
+                        <div class="form-group">
+                            <label>Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Example multiple select</label>
+                            <select multiple class="form-control" id="exampleFormControlSelect2">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Form Controls -->
+
+    <!-- Form Elements -->
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card mb-30">
+                <div class="card-body">
+                    <div class="card-header">
+                        <h5 class="card-title">Form Elements</h5>
+                    </div>
+
+                    <h6 class="mb-3 fs-14">Input Sizing</h6>
+                    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+                    <br>
+                    <input class="form-control" type="text" placeholder="Default input">
+                    <br>
+                    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+
+                    <br>
+
+                    <h6 class="mb-3 fs-14">Select Sizing</h6>
+                    <select class="form-control form-control-lg">
+                        <option>Large select</option>
+                    </select>
+                    <br>
+                    <select class="form-control">
+                        <option>Default select</option>
+                    </select>
+                    <br>
+                    <select class="form-control form-control-sm">
+                        <option>Small select</option>
+                    </select>
+
+                    <br>
+                    <h6 class="mb-3 fs-14">Readonly plain text</h6>
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>
+                        </div>
+                    </form>
+
+                    <br>
+                    <h6 class="mb-3 fs-14">Checkboxes and Radios</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                        <label class="form-check-label" for="defaultCheck2">
+                            Disabled checkbox
+                        </label>
+                    </div>
+                    <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Default radio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Second default radio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                        <label class="form-check-label" for="exampleRadios3">
+                            Disabled radio
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Form Elements -->
+
+    <!-- Form grid -->
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card mb-30">
+                <div class="card-body">
+                    <div class="card-header">
+                        <h5 class="card-title">Form grid</h5>
+                    </div>
+
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Form grid -->
+
+    <!-- Validation Form -->
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card mb-30">
+                <div class="card-body">
+                    <div class="card-header">
+                        <h5 class="card-title">Validation Form</h5>
+                    </div>
+
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                            <label for="validationCustom01">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                            <label for="validationCustom02">Last name</label>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                            <label for="validationCustomUsername">Username</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                </div>
+                                <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                Please choose a username.
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                            <label for="validationCustom03">City</label>
+                            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                            <label for="validationCustom04">State</label>
+                            <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                            <label for="validationCustom05">Zip</label>
+                            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Validation Form -->
+
+    <!-- Supported elements -->
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card mb-30">
+                <div class="card-body">
+                    <div class="card-header">
+                        <h5 class="card-title">Supported elements</h5>
+                    </div>
+
+                    <form class="was-validated">
+                        <div class="mb-3">
+                            <label for="validationTextarea">Textarea</label>
+                            <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                            <div class="invalid-feedback">
+                                Please enter a message in the textarea.
+                            </div>
+                        </div>
+
+                        <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                            <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
+                            <div class="invalid-feedback">Example invalid feedback text</div>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+                            <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-3">
+                            <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+                            <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
+                            <div class="invalid-feedback">More example invalid feedback text</div>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="custom-select" required>
+                            <option value="">Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            </select>
+                            <div class="invalid-feedback">Example invalid custom select feedback</div>
+                        </div>
+
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Supported elements -->
+
+		
+		<!-- This conditions used for conditional footer rendering like login, signup etc pages not showing the footer -->
+						<!-- Footer -->
+				<div class="flex-grow-1"></div>
+<footer class="footer mt-1">
+    <p>Copyright © 2019 Codelynn. All rights reserved</p>
+</footer>			</div>
+			<!-- End Main Content Wrapper -->
+		
+        <!-- Theme Color customizer Right Modal -->
+        <div class="customizer-toggle" data-toggle="modal" data-target="#ThemeColorCustomizer">
+    <i data-feather="settings" class="spin icon mt-minus-2"></i>
+</div>
+
+<div class="modal right color-customizer-modal fade" id="ThemeColorCustomizer">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel2">Theme Color Customizer</h4>
+            </div>
+
+            <div class="modal-body">
+                <!-- Left SideMenu Color Switcher -->
+                <div class="color-content">
+                    <h5>Left SideMenu Color</h5>
+                    <p class="mb-2">Change SideMenu background color</p>
+                    <ul class="customize-sidemenu">
+                        <li id="BGPrimary" class="bg_primary"></li>
+                        <li id="BGPurpleIndigo" class="purple_indigo"></li>
+                        <li id="BGPink" class="bg_pink"></li>
+                        <li id="BGnNightBlue" class="bg_night_blue"></li>
+                        <li id="BGIndigo" class="bg_indigo"></li>
+                        <li id="BGSuccess" class="bg_success"></li>
+                        <li id="BGSecondary" class="bg_secondary"></li>
+                        <li id="BGPurple" class="bg_purple"></li>
+                        <li id="BGGray" class="bg_gray"></li>
+                        <li id="BGDanger" class="bg_danger"></li>
+                        <li id="BGGrayBlue" class="bg_gray_blue"></li>
+                        <li id="BGGreen" class="bg_green"></li>
+                        <li id="BGWarning" class="bg_warning"></li>
+                        <li id="BGDeepPurple" class="bg_deep_purple"></li>
+                    </ul>
+                </div>
+
+                <!-- Left SideMenu Folded Menu -->
+                <div class="color-content">
+                    <h5>Folded Menu</h5>
+                    <p>Toggle Folded Menu</p>
+
+                    <div class="side-menu-switch">
+                        <label class="switch">
+                            <input type="checkbox" class="light">
+                            <span class="slider round folded-menu"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card Shadow Show & hide -->
+                <div class="color-content">
+                    <h5>Card Shadow</h5>
+                    <p>Show & Hide Card Shadow</p>
+
+                    <div class="side-menu-switch">
+                        <label class="switch">
+                            <input type="checkbox" class="light">
+                            <span class="slider round card-shadow"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Footer Scripts -->
+        <!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Feather Icon JS -->
+<script src="../js/feather.min.js"></script>
+<!-- Gllery viewer JS -->
+<script src="../js/viewer.min.js"></script>
+
+<!-- ApexCharts JS -->
+<script src="../js/apex-charts/apexcharts.min.js"></script>
+<script src="../js/apex-charts/apexcharts-stock-prices.js"></script>
+<script src="../js/apex-charts/apex-line-charts.js"></script>
+<script src="../js/apex-charts/apex-area-charts.js"></script>
+<script src="../js/apex-charts/apex-bar-charts.js"></script>
+<script src="../js/apex-charts/apex-mixed-charts.js"></script>
+<script src="../js/apex-charts/apex-pie-donuts-charts.js"></script>
+<script src="../js/apex-charts/sales-by-countries.js"></script>
+<script src="../js/apex-charts/product-trends-by-month.js"></script>
+<script src="../js/apex-charts/month-sales-statistics.js"></script>
+<script src="../js/apex-charts/order-summary.js"></script>
+<script src="../js/apex-charts/visitors-overview.js"></script>
+<script src="../js/apex-charts/leads-stats.js"></script>
+<script src="../js/apex-charts/apex-column-charts.js"></script>
+<script src="../js/custom-chart.js"></script>
+
+<!-- Custom JS -->
+<script src="../js/custom.js"></script>
+            </body>
+</html>
