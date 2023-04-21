@@ -1,0 +1,75 @@
+
+{% extends 'header.html' %}
+
+<!-- Stats Card -->
+
+{% block content%}
+
+
+<div class="row">
+	<div class="col-lg-4 col-sm-6">
+		<div class="stats-card-two mb-30">
+			<div class="media align-items-center justify-content-between">
+				<div class="ml-0">
+					<p class="mb-10 line-height-1"> Fb Pages </p>
+					<h3 class="mb-0 fs-25">{{fbcount}}</h3>
+				</div>
+				<div class="avatar avatar-blue radius-0">
+					<i data-feather="file-text"></i>
+				</div>
+			</div>
+
+		
+
+			
+			</div>
+		</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="stats-card-two mb-30">
+			<div class="media align-items-center justify-content-between">
+				<div class="ml-0">
+					<p class="mb-10 line-height-1"> Linkedin Companies </p>
+					<h3 class="mb-0 fs-25">{{lnpagecount}}</h3>
+				</div>
+				<div class="avatar avatar-cyan radius-0">
+					<i data-feather="user"></i>
+				</div>
+			</div>
+
+
+			
+			</div>
+		</div>
+	 
+	<div class="col-lg-4 col-sm-6">
+		<div class="stats-card-two mb-30">
+			<div class="media align-items-center justify-content-between">
+				<div class="ml-0">
+					<p class="mb-10 line-height-1">Company Employees</p>
+					<h3 class="mb-0 fs-25">{{lnempcount}}</h3>
+				</div>
+				<div class="avatar avatar-purple radius-0">
+					<i data-feather="users"></i>
+				</div>
+			</div>
+
+			
+
+			
+			</div>
+		</div>
+
+
+		
+			
+			</div>
+		</div>
+</div>
+
+
+
+<!-- End Stats Card -->
+{% include 'footer.html' %}
+
+{% endblock%}

@@ -1,0 +1,60 @@
+{% extends 'header.html' %}
+
+<!-- Stats Card -->
+
+{% block content%}
+
+
+
+
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card mb-30">
+                <div class="card-body">
+                    <div class="card-header">
+                        <h5 class="card-title">Scrap Linkedin</h5>
+                    </div>
+
+                    <form method="POST">
+        {%csrf_token%}
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input required type="email" class="form-control" name="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input required type="password" class="form-control" name="password" id="password" placeholder="Password">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Keyword</label>
+                                <input required type="text" class="form-control" name="keyword" id="keyword" placeholder="Keyword">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Location</label>
+                                <input required type="text" class="form-control" name="location" id="location" placeholder="Location">
+                            </div>
+                        </div>
+                        <div class="form-row">
+
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">URL</label>
+                            <input required type="url" class="form-control" name="url" id="url" placeholder="URL">
+                        </div>
+                        </div>
+                    
+<button type="submit" class="btn btn-primary">Start</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% include 'footer.html' %}
+   
+    {% endblock%}
